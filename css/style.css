@@ -33,6 +33,7 @@ body {
   --color-menu: #212121;
   --border-line-color: #ececec;
   --second-border-line-color: #eeeeee;
+  --icon-color: #afb1b8;
 }
 .logo-top {
   color: var(--logo-top);
@@ -59,7 +60,7 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   margin-left: 93px;
-  margin-right: 371px;
+  margin-right: 345px;
   width: 254px;
 }
 .menu-list {
@@ -97,22 +98,37 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 0px;
+  white-space: nowrap;
+}
+.contact-list-item {
+  color: var(--text-color-one);
+  fill: var(--text-color-one);
+  margin-right: 30px;
+}
+.contact-list-item:hover,
+.contact-list-item:focus {
+  color: var(--highlited);
+  fill: var(--highlited);
+  cursor: pointer;
+}
+.contact-list-item:last-child {
+  margin-right: 0px;
 }
 .contact-top {
-  color: var(--text-color-one);
+  color: inherit;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  margin-right: 50px;
+  margin-right: 30px;
+  margin-left: 10px;
 }
 .contact-top:last-child {
   margin-right: 0px;
 }
-.contact-top:hover,
-.contact-top:focus {
-  color: var(--highlited);
+.contact-top:first-child {
+  margin-left: 0px;
 }
 .title-field {
   background-color: var(--first-color-background);
@@ -170,7 +186,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
-  margin-top: 0px;
+  margin-top: 30px;
 }
 .description {
   font-size: 14px;
@@ -242,10 +258,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-one);
-  margin: 0px;
+  margin-bottom: 16px;
+  margin-top: 0px;
   padding-left: 70px;
   padding-right: 70px;
-  padding-bottom: 30px;
+
   white-space: nowrap;
 }
 .personel {
@@ -261,6 +278,28 @@ body {
 }
 .personel-list-item:last-child {
   margin-right: 0px;
+}
+.social-media {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 18px;
+  white-space: nowrap;
+  background-color: transparent;
+}
+.social-media-icon {
+  fill: var(--icon-color);
+  margin-right: 10px;
+  padding: 12px;
+}
+.social-media-icon:last-child {
+  margin-right: 0px;
+}
+.social-media-icon:hover,
+.social-media-icon:focus {
+  background-color: var(--highlited);
+  fill: var(--third-background-color);
+
+  border-radius: 50%;
 }
 .bottom-page {
   background-color: var(--first-color-background);
