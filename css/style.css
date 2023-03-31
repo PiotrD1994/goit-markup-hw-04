@@ -132,8 +132,22 @@ body {
 }
 .title-field {
   background-color: var(--first-color-background);
+  background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+.title-field-fluid {
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
 }
 .title {
   color: var(--third-background-color);
