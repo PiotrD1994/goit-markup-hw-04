@@ -104,6 +104,8 @@ body {
   color: var(--text-color-one);
   fill: var(--text-color-one);
   margin-right: 30px;
+  display: flex;
+  align-items: center;
 }
 .contact-list-item:hover,
 .contact-list-item:focus {
@@ -116,6 +118,7 @@ body {
 }
 .contact-top {
   color: inherit;
+  display: flex;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -131,10 +134,15 @@ body {
   margin-left: 0px;
 }
 .contact-icon {
-  display: inline-block;
+  display: flex;
 }
 .title-field {
   background-color: var(--first-color-background);
+}
+.title-field-fluid {
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4),
@@ -146,11 +154,6 @@ body {
   background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-.title-field-fluid {
-  max-width: 1600px;
-  height: 100%;
-  margin: 0 auto;
 }
 .title {
   color: var(--third-background-color);
@@ -207,6 +210,10 @@ body {
 }
 .description-pictrue {
   display: inline-block;
+}
+.description-pictrue-container {
+  padding: 25px 100px;
+  background-color: var(--second-color-background);
 }
 .description {
   font-size: 14px;
